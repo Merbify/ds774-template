@@ -14,6 +14,10 @@ def home():
 @app.route("/documents")
 def documents():
     return render_template('documents.html')
+
+@app.route("/announcements")
+def announcements():
+    return render_template('announcements.html')
     
 @app.route('/contact', methods=['GET', 'POST'])
 def contact():
