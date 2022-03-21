@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %}<title>Announcements</title>{% endblock %}
+{% set active_page = "announcements" %}
+
+{% block content %}
+<!-- container for tablular structure: 1 row -->
+<div class="container">
+  <div class="row">
+
+    <!-- column 1 -->
+    <div class="col-sm-12">
+      <h3>Documents</h3>
+      <ul>
+        <li><a
+          href="https://docs.google.com/document/d/1IyegnJe9LHI0VjyWj2bVpTGZqZYKK3wE/edit?usp=sharing&ouid=111253180181622753225&rtpof=true&sd=true">Company
+          Bylaws</a></li>
+        <li><a
+          href="https://docs.google.com/document/d/1NX31L7gJbcD9gwrnEvH09Pp8tMDD3e67wGLoHFHE9fk/edit?usp=sharing">
+          Minutes</a></li>
+        <li><a
+          href="https://docs.google.com/document/d/1n1QfVVuXSHHh_3lfSrF5CX8ctHwUif2n/edit?usp=sharing&ouid=111253180181622753225&rtpof=true&sd=true">
+          Non-Disclosure Agreement</a></li>
+        <li><a
+          href="https://docs.google.com/document/d/1clEUmOgaPjgxqEeRYoae5gHbG894fD_eqB2OfscEqOI/edit?usp=sharing">
+          Memorandum</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+{% endblock %}
