@@ -4,6 +4,7 @@
 
 {% block content %}
 <!-- code referenced from https://www.w3schools.com/howto/howto_css_calendar.asp -->
+<!DOCTYPE html>
 <html>
 <head>
 <style>
@@ -12,9 +13,9 @@ ul {list-style-type: none;}
 body {font-family: Verdana, sans-serif;}
 
 .month {
-  padding: 70px 25px;
-  width: 33%;
-  background: #3b3b3b;
+  padding: 20px 25px;
+  width: 50%;
+  background: #1abc9c;
   text-align: center;
 }
 
@@ -43,18 +44,20 @@ body {font-family: Verdana, sans-serif;}
 .weekdays {
   margin: 0;
   padding: 10px 0;
+  width: 50%;
   background-color: #ddd;
 }
 
 .weekdays li {
   display: inline-block;
-  width: 4.7%;
+  width: 12.6%;
   color: #666;
   text-align: center;
 }
 
 .days {
   padding: 10px 0;
+  width: 50%;
   background: #eee;
   margin: 0;
 }
@@ -62,7 +65,7 @@ body {font-family: Verdana, sans-serif;}
 .days li {
   list-style-type: none;
   display: inline-block;
-  width: 4.6%;
+  width: 12.6%;
   text-align: center;
   margin-bottom: 5px;
   font-size:12px;
@@ -92,7 +95,7 @@ body {font-family: Verdana, sans-serif;}
 </head>
 <body>
 
-<h1>Monthly Events</h1>
+<h1>Event Calander</h1>
 
 <div class="month">      
   <ul>
@@ -106,22 +109,24 @@ body {font-family: Verdana, sans-serif;}
 </div>
 
 <ul class="weekdays">
+  <li>Mo</li>
   <li>Tu</li>
   <li>We</li>
   <li>Th</li>
-  <li>Fe</li>
+  <li>Fr</li>
   <li>Sa</li>
   <li>Su</li>
-  <li>Mo</li>
 </ul>
 
 <ul class="days">  
+  <li style="color:#FF0000";>27</li>
+  <li style="color:#FF0000";>28</li>
   <li>1</li>
   <li>2</li>
   <li>3</li>
   <li>4</li>
   <li>5</li>
-  <li><span class="active">6</span></li>
+  <li>6</li>
   <li>7</li>
   <li>8</li>
   <li>9</li>
@@ -147,9 +152,17 @@ body {font-family: Verdana, sans-serif;}
   <li>29</li>
   <li>30</li>
   <li><span class="active">31</span></li>
+  <li style="color:#FF0000";>1</li>
+  <li style="color:#FF0000";>2</li>
 </ul>
-
+<div class="col-sm-3">
+  <h3>Dates</h3>
+  <p>3/13 Company Potluck</p>
+  <p>3/18 Wear pajama's to pants day</p>
+  <p>3/31 Corporate will be closed!</p>
+</div>
 </body>
 </html>
+
 
 {% endblock %}
