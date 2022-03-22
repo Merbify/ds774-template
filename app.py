@@ -21,7 +21,7 @@ def announcements():
 
 @app.route("/directory")
 def directory():
-    return render_template('Directory.html')
+    return render_template('directory.html')
     
 @app.route('/contact', methods=['GET', 'POST'])
 def contact():
