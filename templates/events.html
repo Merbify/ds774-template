@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}<title>Events</title>{% endblock %}
+{% set active_page = "events" %}
+
+{% block content %}
+<!-- container for tablular structure: 1 row -->
+<div class="container">
+  <div class="row">
+
+    <!-- column 1 -->
+    <div class="col-sm-12">
+      <h3>Announcements</h3>
+      <ul>
+        <li>3/18 Recieved first yearly shipment of seasonal Fava beans</li>
+        <li>3/1 Hired new cashier to replace old cashier</li>
+        <li>2/15 Fired cashier for stealing money out of the cash register</li>
+        <li>2/14 Closed store for valentines day</li>
+        <li>1/17 Closed store for MLK Day</li>
+        <li>1/15 First act from Abe is Installing self checkout machines to allow a smoother customer experience</li>
+        <li>1/2 Hired Abe Pearson as new CTO of the company</li>
+        <li><a
+          href="https://docs.google.com/spreadsheets/d/1dNewnkvOvf2PyZ9Tuow1zclGRdRhuSwyUtqGxHEO9Lk/edit?usp=sharing"> Budget for the upcoming year</a></li>
+        <li>1/1 Happy new years everyone! 20% off sale for all alcohol.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+{% endblock %}
